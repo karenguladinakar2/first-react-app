@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import CompC from "./components/CompC";
+import { PostForm } from "./components/PostForm";
+import PostFormAxios from "./components/PostFormAxios";
+import { PostList } from "./components/PostList";
+import PostListAxios from "./components/PostListAxios";
+import Sample from "./components/Sample";
+import { UserProvider } from "./components/userContext";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PostFormAxios />
     </div>
   );
 }
